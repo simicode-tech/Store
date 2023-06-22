@@ -17,36 +17,6 @@ async function retrieveProduct() {
   } catch (error) {
     console.log(error.mesage);
   }
-
-  // fetch(`https://fakestoreapi.com/products/${productId}`)
-  //   .then((response) => response.json())
-  //   .then((product) => {
-  //     console.log(product);
-
-  //     // Display the product details
-
-  //     // productDetails += `
-
-  //     //   <div class="col-md-4">
-  //     //     <img src="${product.image}"width="250" alt=""/>
-  //     //   </div>
-  //     //   <div class="col-md-8">
-  //     //     <h2>${product.title}</h2>
-  //     //     <p>${product.description}</p>
-  //     //     <p>Price: $${product.price}</p>
-  //     //     <div style="display: flex;">
-  //     //       <div style="margin-right:12px"><button id="buy-now-button">Buy Now</button></div>
-  //     //       <button id="addToCartBtn" class="addToCart" data-id="${product.id}">Add to Cart</button>
-  //     //     </div>
-  //     //   </div>
-
-  //     // `;
-  //     // document.querySelector("#product-details").innerHTML = productDetails;
-
-  //     // console.log(buyNowButton);
-
-  //     // console.log(buyNowButton);
-  //   });
 }
 retrieveProduct();
 
@@ -90,16 +60,3 @@ function singleProduct(product) {
 
   // buyNowButton.;
 }
-// function addDisplay(e) {
-//   retrieveProduct();
-//   if (e.target.classList.contains("addToCart")) {
-//     const productIdData = parseInt(e.target.dataset.id);
-//     console.log(productId);
-//     // console.log(product);
-//     // const productDetails = product.find((p) => p.id === productId);
-//     console.log(productDetails);
-//     // const product = newData.find((p) => p.id === productId);
-
-//     console.log(productIdData);
-//   }
-// }

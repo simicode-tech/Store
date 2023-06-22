@@ -111,7 +111,7 @@ if (!user) {
             <a
               class="nav-link active"
               aria-current="page"
-              href="project2.html"
+              href="index.html"
               >Home</a
             >
           </li>
