@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <section>
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/1.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/2.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/3.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- product start here -->
+    <section class="product">
+      <h2>Product</h2>
+      <div class="filter-box">
+        <button class="btn active" data-filter="all">All</button>
+        <button class="btn" data-filter="electronics">electronics</button>
+        <button class="btn" data-filter="jewelery">jewelery</button>
+        <button class="btn" data-filter="men's clothing">men's clothing</button>
+        <button class="btn" data-filter="women's clothing">
+          women's clothing
+        </button>
+      </div>
+      <div class="loading">
+        <div
+          align="center"
+          style="
+            position: absolute;
+            margin-top: 63px;
+            text-align: center;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 550;
+            color: #fafafd;
+          "
+        >
+          Loading...
+        </div>
+      </div>
+      <div class="product-list">
+        <div class="container">
+          <div class="row" id="product-item"></div>
+          <!-- <div class="page">
+            <button id="previous">previous</button>
+            <button id="next">next</button>
+          </div> -->
+          <div class="page">
+            <div id="pagination-container"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>© 2022 mini ecomerce Designed by SimiCode-Tech</p>
+    </footer>
+
+    <!-- <section class="container">
+      <div id="cart">
+        <h2>Shopping Cart</h2>
+        <table class="table table-bordered table-sm">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody id="cart-items"></tbody>
+          <tfoot>
+            <th colspan="4">Total Cost: <span id="total-cost">$0.00</span></th>
+          </tfoot>
+        </table>
+        <button id="checkout">Checkout</button>
+      </div>
+    </section> -->
+
+    <!-- <div id="cart">
+      <h2>Shopping Cart</h2>
+      <ul id="cart-items"></ul>
+      <p id="cart-total">Total: $0</p>
+      <button id="checkout">Checkout</button>
+    </div> -->
+    <!-- product end -->
+    <div class="top">&uarr;</div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="navabar.js"></script>
+    <script src="project2.js"></script>
+    <script src="cartStore.js"></script>
+    <script src="cart.js"></script>
+    <script src="productFilter.js"></script>
+  </body>
+</html>
